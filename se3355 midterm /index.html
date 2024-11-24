@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky-menu">
+        <ul class="nav-list">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="categori.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="active">Register Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Form Container -->
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h2>Register Now</h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+
+    <!-- Company Dropdown -->
+    <label for="company">Select Company:</label>
+        <select id="company" name="company" required>
+        <option value="" disabled selected>Choose a company</option> 
+        </select>
+
+    <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+               
+    <!-- Phone Input -->
+    <label for="phone">Phone Number:</label>
+    <div class="phone-group">
+        <select id="areaCode" required> </select>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    </div>
+           
+    <!-- Subject Dropdown -->
+    <label for="subject">Select Subject:</label>
+    <select id="subject" name="subject" required>
+    <option value="" disabled selected>Choose a subject</option>
+    </select>
+
+     <!-- Beginner Radio Buttons -->
+     <div class="radio-group">
+     <label>Are you a beginner?</label>
+        <input type="radio" id="yes" name="beginner" value="yes" required> Yes
+        <input type="radio" id="no" name="beginner" value="no" required> No
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Register</button>
+    </form>
+    </div>
+    </div>
+
+    <!-- Sticky Ads -->
+    <div class="ad ad-left">
+        <button class="close-ad">✖</button>
+        <a href="https://www.google.com" target="_blank">
+            <img src="google.jpg" alt="Ad">
+        </a>
+    </div>
+    <div class="ad ad-right">
+        <button class="close-ad">✖</button>
+        <a href="https://www.google.com" target="_blank">
+            <img src="google.jpg" alt="Ad">
+        </a>
+    </div>
+
+</body>
+</html>
